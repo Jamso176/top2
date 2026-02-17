@@ -10,8 +10,16 @@ lo lo();
 Userinterface Userinterface();
 
 public:
-E2mma();
-setup();
-run();
+~E2mma();
+virtual void E2mma{
+
+}
+
+virtual void setup(){
+
+}
+virtual void run(){
+
+}
 };
 #endif
