@@ -1,7 +1,17 @@
 #ifndef E2MMA_H
 #define E2MMA_H
 
-class
+class E2mma{
+private;
+ParserXML ParserXML();
+CurvePlotting CurvePlotting();
+FileSystem FileSystem();
+lo lo();
+Userinterface Userinterface();
 
-
+public:
+E2mma();
+setup();
+run();
+};
 #endif
