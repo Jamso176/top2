@@ -2,7 +2,7 @@
 #define E2MMA_H
 
 class E2mma{
-private;
+private:
 ParserXML ParserXML();
 CurvePlotting CurvePlotting();
 FileSystem FileSystem();
@@ -16,7 +16,11 @@ virtual void E2mma{
 }
 
 virtual void setup(){
-
+  ParserXML ParserXML(string);
+  CurvePlotting CurvePlotting(string);
+  FileSystem FileSystem();
+  lo lo();
+  Userinterface Userinterface();
 }
 virtual void run(){
 
