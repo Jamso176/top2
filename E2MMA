@@ -22,12 +22,6 @@ virtual void setup(){
   Userinterface();
 }
 
-virtual void run(){
-  ParserXML();
-  CurvePlotting();
-  FileSystem();
-  lo();
-  Userinterface();
-}
+virtual void run() = 0;
 };
 #endif
