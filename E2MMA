@@ -23,7 +23,11 @@ virtual void setup(){
 }
 
 virtual void run(){
-
+  ParserXML();
+  CurvePlotting();
+  FileSystem();
+  lo();
+  Userinterface();
 }
 };
 #endif
