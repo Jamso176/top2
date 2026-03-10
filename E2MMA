@@ -11,16 +11,15 @@ Userinterface Userinterface();
 
 public:
 ~E2mma();
-virtual void E2mma{
-
-}
+/// @brief 
+void E2mma::~E2mma{};
 
 virtual void setup(){
-  ParserXML ParserXML(string);
-  CurvePlotting CurvePlotting(string);
-  FileSystem FileSystem();
-  lo lo();
-  Userinterface Userinterface();
+  ParserXML();
+  CurvePlotting();
+  FileSystem();
+  lo();
+  Userinterface();
 }
 
 virtual void run(){
