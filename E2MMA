@@ -6,10 +6,11 @@ private:
 ParserXML ParserXML();
 CurvePlotting CurvePlotting();
 FileSystem FileSystem();
-lo lo();
+Io Io();
 Userinterface Userinterface();
 
 public:
+E2mma();
 ~E2mma();
 /// @brief 
 void E2mma::~E2mma{};
@@ -18,7 +19,7 @@ virtual void setup(){
   ParserXML();
   CurvePlotting();
   FileSystem();
-  lo();
+  Io();
   Userinterface();
 }
 
