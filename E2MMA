@@ -1,28 +1,26 @@
 #ifndef E2MMA_H
 #define E2MMA_H
 
+class ParserXML;
+class CurvePlotting;
+class FileSystem;
+class Io;
+class Userinterface;
+
 class E2mma{
 private:
-ParserXML ParserXML();
-CurvePlotting CurvePlotting();
-FileSystem FileSystem();
-Io Io();
-Userinterface Userinterface();
+    ParserXML* parser;
+    CurvePlotting* plotter;
+    FileSystem* fs;
+    Io* io;
+    Userinterface* ui;
 
 public:
-E2mma();
-~E2mma();
-/// @brief 
-void E2mma::~E2mma{};
+    E2mma();
+    virtual ~E2mma();
 
-virtual void setup(){
-  ParserXML();
-  CurvePlotting();
-  FileSystem();
-  Io();
-  Userinterface();
-}
-
+virtual void setup();
 virtual void run() = 0;
 };
+
 #endif
