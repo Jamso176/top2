@@ -7,13 +7,13 @@ class FileSystem;
 class io;
 class Userinterface;
 
-class E2mma{
+class E2mma {
 private:
-    ParserXML*      parser;
-    CurvePlotting*  plotter;
-    FileSystem*     fs;
-    io*             io;
-    Userinterface*  ui;
+    ParserXML* parser;
+    CurvePlotting* plotter;
+    FileSystem* fs;
+    io* io;
+    Userinterface* ui;
 
 public:
     E2mma();
@@ -21,10 +21,6 @@ public:
 
     virtual void setup();
     virtual void run() = 0;
-
-    FileSystem*    getFileSystem() { return fs;}
-    io*            getio() { return io;}
-    Userinterface* getUserinterface() { return ui;}
 };
 
 #endif
