@@ -4,7 +4,7 @@
 class ParserXML;
 class CurvePlotting;
 class FileSystem;
-class io;
+class Io;
 class Userinterface;
 
 class E2mma {
@@ -12,7 +12,9 @@ private:
     ParserXML* parser;
     CurvePlotting* plotter;
     FileSystem* fs;
-    io* io;
+    Io* io_input1;      // Entrée 1 (ex: position)
+    Io* io_input2;      // Entrée 2 (ex: vitesse)
+    Io* io_output;      // Sortie (ex: commande moteur)
     Userinterface* ui;
 
 public:
@@ -21,6 +23,11 @@ public:
 
     virtual void setup();
     virtual void run() = 0;
+    
+    // Getters pour accéder aux I/O depuis les classes dérivées
+    Io* getInput1() { return io_input1; }
+    Io* getInput2() { return io_input2; }
+    Io* getOutput() { return io_output; }
 };
 
 #endif
